@@ -1,18 +1,18 @@
 # 📈 stock-forecasting-yahoo-finance-analysis
 
-Time series-based stock price forecasting for Tesla (TSLA) using Facebook Prophet. This project covers data extraction from Yahoo Finance, exploratory data analysis, monthly and yearly returns, model training, forecasting, and performance evaluation (MAE: 0.046, RMSE: 0.057).
+Time series-based stock price forecasting for Tesla (TSLA) using Facebook Prophet. This project covers data extraction from Yahoo Finance, exploratory data analysis, feature engineering, model training, forecasting, and performance evaluation.
 
 ---
 
 ## 📌 Overview
-This project focuses on forecasting stock prices using Time Series Analysis and Facebook Prophet.  
-The model is applied to Tesla (TSLA) stock data to analyze trends, patterns, and predict future prices.
+This project applies time series analysis techniques to forecast Tesla (TSLA) stock prices using Facebook Prophet. It includes end-to-end workflow from data collection to model evaluation, highlighting trends, seasonality, and predictive performance.
 
 ---
 
 ## 📊 Dataset
 - Source: Yahoo Finance (via yfinance API)
 - Stock: Tesla (TSLA)
+- Time Period: 2017 – 2023
 - Features:
   - Open
   - High
@@ -37,9 +37,9 @@ The model is applied to Tesla (TSLA) stock data to analyze trends, patterns, and
 1. Data collection from Yahoo Finance  
 2. Data preprocessing and cleaning  
 3. Exploratory Data Analysis (EDA)  
-4. Monthly and yearly returns calculation  
+4. Feature engineering (returns, log transformation)  
 5. Time Series modeling using Prophet  
-6. Forecasting future stock prices  
+6. Forecasting future stock prices (24 months horizon)  
 7. Model evaluation using error metrics  
 
 ---
@@ -48,17 +48,34 @@ The model is applied to Tesla (TSLA) stock data to analyze trends, patterns, and
 - Algorithm: Facebook Prophet  
 - Forecast horizon: 24 months  
 - Seasonality: Daily enabled  
+- Transformation: Log transformation applied to stabilize variance  
 
 ---
 
-## 📈 Results
-- Mean Absolute Error (MAE): 0.046  
-- Root Mean Squared Error (RMSE): 0.057  
+## 📊 Results
+
+The Prophet model demonstrated strong forecasting performance:
+
+- Mean Absolute Error (MAE): **0.046**
+- Root Mean Squared Error (RMSE): **0.057**
+- Mean Squared Error (MSE): **1.31**
 
 ---
 
-## 📊 Visualization
+## 📈 Key Insights
+
+- Achieved **low prediction error**, indicating reliable forecasts  
+- Model closely tracks actual stock price trends  
+- Prophet effectively captures **trend and seasonality**  
+- Log transformation improves stability and prediction accuracy  
+- Suitable for long-term forecasting with uncertainty intervals  
+
+---
+
+## 📊 Visualizations
 The project includes:
-- Closing price trends  
-- Monthly averages  
-- Forecasted values with confidence intervals  
+- Closing price trends over time  
+- Weekly and monthly aggregations  
+- Monthly and yearly returns analysis  
+- Forecast with confidence intervals  
+- Trend and seasonality decomposition  
