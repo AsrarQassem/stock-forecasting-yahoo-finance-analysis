@@ -78,4 +78,18 @@ The project includes:
 - Weekly and monthly aggregations  
 - Monthly and yearly returns analysis  
 - Forecast with confidence intervals  
-- Trend and seasonality decomposition  
+- Trend and seasonality decomposition
+
+---
+
+## Licence
+<span style="font-size:0.9em; white-space:nowrap;">
+  <a href="https://github.com/AsrarQassem/stock-forecasting-yahoo-finance-analysis">stock-forecasting-yahoo-finance-analysis</a> © 2024 by 
+  <a href="https://github.com/AsrarQassem">Asrar Qassem</a> · 
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+
+  <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="width:14px;height:14px;vertical-align:-2px;margin-left:4px;">
+  <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="width:14px;height:14px;vertical-align:-2px;">
+  <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="width:14px;height:14px;vertical-align:-2px;">
+  <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="width:14px;height:14px;vertical-align:-2px;">
+</span>
